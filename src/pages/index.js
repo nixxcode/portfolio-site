@@ -53,9 +53,9 @@ export default () => {
                 <img src={props.image} alt={props.title} />
             </div>
             <h5>{props.title}</h5>
-            <div class="project-links-container" onClick={e => e.stopPropagation()}>
-                <a target="_blank" href={props.website}><i class="fas fa-globe"></i>Website</a>
-                <a target="_blank" href={props.github}><i class="fas fa-code-branch"></i>Github</a>
+            <div className="project-links-container" onClick={e => e.stopPropagation()}>
+                <a target="_blank" href={props.website}><i className="fas fa-globe"></i>Website</a>
+                <a target="_blank" href={props.github}><i className="fas fa-code-branch"></i>Github</a>
             </div>
         </div>
 
