@@ -15,11 +15,19 @@ export default () => {
 
     const Headline = () => 
     <div className="headline-container">
-        <h1>Hi, I'm Dominik</h1>
-        <h2>Software Developer</h2>
+        <div className="intro-box">
+            <i className="fas fa-laptop-code"></i>
+            <div className="intro-text">
+                <h1>Hi, I'm Dominik</h1>
+                <h2>Software Developer</h2>
+            </div>
+        </div>
 
-        <p>Welcome to my portfolio website. To see some of my work, click the button below</p>
-        <button type="button" className="view-projects" name="view-projects">VIEW PROJECTS</button>
+        <p>Welcome to my portfolio website. To see some of my work or to get in touch, use the buttons below</p>
+        <div className="button-box">
+            <button type="button" className="cta-button" name="view-projects">VIEW PROJECTS</button>
+            <button type="button" className="cta-button" name="get-in-touch">GET IN TOUCH</button>
+        </div>
     </div>
 
 
