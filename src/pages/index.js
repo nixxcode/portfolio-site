@@ -61,6 +61,13 @@ export default () => {
                     website="https://nixxcode.com/connect4react/"
                     github="https://github.com/nixxcode/connect4react"
                 />
+                <Project 
+                    image="./img/responsive-web-template.png" 
+                    title="Responsive Web Template" 
+                    description="Fully responsive, mobile-first web template, featuring multiple screen-width breakpoints that sensibly resize web content depending on the viewer’s screen size. Built with accessibility in mind. Every element on the site is accessible via keyboard (tab and enter)."
+                    website="https://nixxcode.com/responsive-web-template/"
+                    github="https://github.com/nixxcode/responsive-web-template"
+                />
             </div>
         </div>
 
