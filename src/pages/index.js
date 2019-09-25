@@ -18,7 +18,7 @@ export default () => {
         <div className="intro-box">
             <i className="fas fa-laptop-code"></i>
             <div className="intro-text">
-                <h1>Hi, I'm Dominik</h1>
+                <h1>Dominik Petrovic</h1>
                 <h2>Software Developer</h2>
             </div>
         </div>
@@ -34,11 +34,14 @@ export default () => {
     const Portfolio = () =>
         <div className="portfolio-container">
             <h1>Projects</h1>
+            <p>Below is a collection of select projects I have worked on during my time as a developer. Click or tap on individual cards for details</p>
             <div className="projects-box">
                 <Project 
                     image="./img/jvm-brotli.png" 
                     title="Jvm-Brotli" 
-                    description="While working to implement Brotli compression in Javalin (see next project), I found the Java offerings for Brotli were out of date, buggy, or unsuitable for performance reasons. That’s when I decided to create my own cross-platform library with the goal of making Brotli easy to access for Java developers and consumers on all platforms. What makes Jvm-Brotli uniquely helpful, is that including it in your own project is as simple as adding a single Maven or Gradle dependency. It will automatically download and use the correct native library based on the platform the dependent app is currently running on. This takes away all the complexity of JNI, making Brotli simple to include and easy to use." 
+                    description="While working to implement Brotli compression in Javalin (see next project), I found the Java offerings for Brotli were out of date, buggy, or unsuitable for performance reasons. 
+                    That’s when I decided to create my own cross-platform library with the goal of making Brotli easy to access for Java developers and consumers on all platforms. What makes Jvm-Brotli uniquely helpful, is that including it in your own project is as simple as adding a single Maven or Gradle dependency. 
+                    It will automatically download and use the correct native library based on the platform the dependent app is currently running on. This takes away all the complexity of JNI, making Brotli simple to include and easy to use." 
                     website="https://jvmbrotli.com"
                     github="https://github.com/nixxcode/jvm-brotli"
                 />
@@ -50,6 +53,13 @@ export default () => {
                     Unsurprising for such a significant change, a few bugs and issues surfaced after we released the changes. However, many continuous integration tests and some bug fixes later, the result of our work speaks for itself. Javalin now supports the Brotli compression format, as well as having a streamlined, unified handler for both dynamic and static HTTP responses."
                     website="https://javalin.io"
                     github="https://github.com/tipsy/javalin"
+                />
+                <Project 
+                    image="./img/connect-4-react.png" 
+                    title="Connect 4 React" 
+                    description="Connect 4 game written entirely in vanilla React. It can be played on the web link provided. The app is sensibly broken down into individual game components such as: the game board component, which is made up of 6 row components, which are in turn made up of 7 cell components each."
+                    website="https://nixxcode.com/connect4react/"
+                    github="https://github.com/nixxcode/connect4react"
                 />
             </div>
         </div>
@@ -70,6 +80,7 @@ export default () => {
 
     const ProjectDetails = () => 
         <div className="project-details">
+            <span className="close" onClick={() => handleCloseClick()} >X</span>
             <h3>{state.overlayTitle}</h3>
             <pre>{state.overlayDescription}</pre>
         </div>
@@ -79,7 +90,6 @@ export default () => {
                 <div 
                     className="overlay" 
                     id="overlay" 
-                    onClick={() => handleOverlayClick()} 
                     style={{display: state.overlayVisible ? "block" : "none"}}
                 >
                         <ProjectDetails />
@@ -88,7 +98,7 @@ export default () => {
     }
 
 
-    const handleOverlayClick = () => {
+    const handleCloseClick = () => {
         setState({ overlayVisible: false })
     }
 

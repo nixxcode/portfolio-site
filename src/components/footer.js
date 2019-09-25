@@ -2,5 +2,7 @@ import React from "react"
 
 export default props => 
     <footer>
-        <p>FOOTER text</p>
+        <div className="footer-container">
+            <p>FOOTER text</p>
+        </div>
     </footer>
