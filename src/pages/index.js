@@ -37,7 +37,7 @@ export default () => {
             <p>Below is a collection of select projects I have worked on during my time as a developer. Click or tap on individual cards for details</p>
             <div className="projects-box">
                 <Project 
-                    image="./img/jvm-brotli.png" 
+                    image="./img/jvm-brotli.jpg" 
                     title="Jvm-Brotli" 
                     description="While working to implement Brotli compression in Javalin (see next project), I found the Java offerings for Brotli were out of date, buggy, or unsuitable for performance reasons. 
                     That’s when I decided to create my own cross-platform library with the goal of making Brotli easy to access for Java developers and consumers on all platforms. What makes Jvm-Brotli uniquely helpful, is that including it in your own project is as simple as adding a single Maven or Gradle dependency. 
@@ -46,7 +46,7 @@ export default () => {
                     github="https://github.com/nixxcode/jvm-brotli"
                 />
                 <Project 
-                    image="./img/javalin.png" 
+                    image="./img/javalin.jpg" 
                     title="Javalin" 
                     description="I have been working closely with Javalin’s maintainer to fix bugs and introduce brand new features to this fantastic and easy-to-use web framework.
                     My greatest contribution to the project was implementing Brotli compression capabilities for both static and dynamic web content. This got quite technical and complex, because Javalin’s static content handling is built on top of Jetty, so it was necessary to override the default content handling with our own robust approach.
@@ -55,21 +55,28 @@ export default () => {
                     github="https://github.com/tipsy/javalin"
                 />
                 <Project 
-                    image="./img/connect-4-react.png" 
+                    image="./img/connect-4-react.jpg" 
                     title="Connect 4 React" 
                     description="Connect 4 game written entirely in vanilla React. It can be played on the web link provided. The app is sensibly broken down into individual game components such as: the game board component, which is made up of 6 row components, which are in turn made up of 7 cell components each."
                     website="https://nixxcode.com/connect4react/"
                     github="https://github.com/nixxcode/connect4react"
                 />
                 <Project 
-                    image="./img/responsive-web-template.png" 
+                    image="./img/responsive-web-template.jpg" 
                     title="Responsive Web Template" 
                     description="Fully responsive, mobile-first web template, featuring multiple screen-width breakpoints that sensibly resize web content depending on the viewer’s screen size. Built with accessibility in mind. Every element on the site is accessible via keyboard (tab and enter)."
                     website="https://nixxcode.com/responsive-web-template/"
                     github="https://github.com/nixxcode/responsive-web-template"
                 />
                 <Project 
-                    image="./img/restful-blog.png" 
+                    image="./img/portfolio-site.jpg" 
+                    title="Portfolio (This) Website" 
+                    description="The website you are currently viewing. Designed to contain my development portfolio as a set of JavaScript-enabled info cards that bring up an overlay with detailed information on the project when clicked." 
+                    website=""
+                    github="https://github.com/nixxcode/portfolio-site"
+                />
+                <Project 
+                    image="./img/restful-blog.jpg" 
                     title="RESTful Blog" 
                     description="Simple blog application written in ASP.NET Razor Pages with an API based on the RESTful architecture. It uses Entity Framework to manipulate data based on CRUD (Create, Read, Update, Delete) operations."
                     website=""
