@@ -68,7 +68,13 @@ export default () => {
                     website="https://nixxcode.com/responsive-web-template/"
                     github="https://github.com/nixxcode/responsive-web-template"
                 />
-
+                <Project 
+                    image="./img/restful-blog.png" 
+                    title="RESTful Blog" 
+                    description="Simple blog application written in ASP.NET Razor Pages with an API based on the RESTful architecture. It uses Entity Framework to manipulate data based on CRUD (Create, Read, Update, Delete) operations."
+                    website=""
+                    github="https://github.com/nixxcode/restful-blog"
+                />
             </div>
         </div>
 
