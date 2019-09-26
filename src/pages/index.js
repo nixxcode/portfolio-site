@@ -68,21 +68,27 @@ export default () => {
                     website="https://nixxcode.com/responsive-web-template/"
                     github="https://github.com/nixxcode/responsive-web-template"
                 />
+
             </div>
         </div>
 
 
-    const Project = props =>
-        <div className="project-container" onClick={() => handleProjectClick(props)}>
-            <div className="image-container">
-                <img src={props.image} alt={props.title} />
+    const Project = props => {
+        let webLinkStyle = props.website === "" ? {display: "none"} : null 
+        
+        return(
+            <div className="project-container" onClick={() => handleProjectClick(props)}>
+                <div className="image-container">
+                    <img src={props.image} alt={props.title} />
+                </div>
+                <h5>{props.title}</h5>
+                <div className="project-links-container" onClick={e => e.stopPropagation()}>
+                    <a target="_blank" href={props.website} style={webLinkStyle}><i className="fas fa-globe"></i>Website</a>
+                    <a target="_blank" href={props.github}><i className="fas fa-code-branch"></i>Github</a>
+                </div>
             </div>
-            <h5>{props.title}</h5>
-            <div className="project-links-container" onClick={e => e.stopPropagation()}>
-                <a target="_blank" href={props.website}><i className="fas fa-globe"></i>Website</a>
-                <a target="_blank" href={props.github}><i className="fas fa-code-branch"></i>Github</a>
-            </div>
-        </div>
+        )
+    }
 
 
     const ProjectDetails = () => 
